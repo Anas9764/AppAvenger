@@ -64,7 +64,7 @@ const Home = () => {
       </View>
 
       <Text style={styles.plusIcon} onPress={() =>
-        router.replace("/Login")}>+</Text>
+        router.replace("/Notification")}>+</Text>
     </View>
   );
 };
