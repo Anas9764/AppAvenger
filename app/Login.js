@@ -1,27 +1,28 @@
 import { router } from 'expo-router';
 import React, { useState } from 'react';
 import { View, Image, TextInput, StyleSheet, TouchableOpacity, Text } from 'react-native';
-// import {Link, Redirect,router} from 'expo-router'
+
 const Login = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [otp, setOtp] = useState();
 
   const handleLogin = () => {
-    // Implement your login logic here
+   
     console.log('Phone Number:', phoneNumber);
     console.log('OTP:', otp);
-    // Add logic for authentication
+  
   };
 
   return (
     <View style={styles.container}>
       {/* Image */}
       <Image
-        source={require('./assets/loginlogo.jpeg')} // Replace with your image URL
+        source={require('./assets/loginlogo.jpeg')} 
         style={styles.image}
       />
 
       {/* Phone Number Input */}
+      
       <TextInput
         style={styles.input}
         placeholder="Phone Number"
@@ -83,8 +84,8 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: 'blue',
     padding: 10,
-    borderRadius: 15, // Adjusted to match the input field
-    width: '100%', // Same width as input
+    borderRadius: 15, 
+    width: '100%', 
     height:60,
 
   },

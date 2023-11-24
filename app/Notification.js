@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
+import { router } from 'expo-router';
 
 const Notification = () => {
   return (
@@ -17,7 +18,8 @@ const Notification = () => {
               <Text style={{ color: "white",textAlign:"center" }}>Decline</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.btn2}>
-              <Text style={{ color: "white" ,textAlign:"center"}}>Accept</Text>
+              <Text style={{ color: "white" ,textAlign:"center"}}  onPress={() =>
+        router.replace("/History")}>Accept</Text>
             </TouchableOpacity>
           </View>
         </View>
